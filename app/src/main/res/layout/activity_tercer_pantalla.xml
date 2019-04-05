@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TercerPantalla">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="426dp"
+        android:text="Operaciones"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonsuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="26dp"
+        android:onClick="calcularsuma"
+        android:text="Suma"
+        app:layout_constraintBottom_toTopOf="@+id/botonresta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/botonresta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="calcularresta"
+        android:text="Resta"
+        app:layout_constraintBottom_toTopOf="@+id/botonpotencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonsuma" />
+
+    <Button
+        android:id="@+id/botonpotencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="calcularpotencia"
+        android:text="Potencia"
+        app:layout_constraintBottom_toTopOf="@+id/botonterminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonresta" />
+
+    <Button
+        android:id="@+id/botonterminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="79dp"
+        android:onClick="salir"
+        android:text="Terminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonpotencia" />
+</android.support.constraint.ConstraintLayout>
